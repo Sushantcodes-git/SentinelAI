@@ -23,9 +23,9 @@ function App() {
       const logs = JSON.parse(text);
 
       const res = await axios.post(
-        "http://127.0.0.1:8000/analyze",
+        "https://sentinelai-1-ikqw.onrender.com/analyze",
         logs
-      );
+);
 
       setData(res.data);
 
