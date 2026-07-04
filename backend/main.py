@@ -8,11 +8,13 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# CORS Configuration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
         "http://localhost:5174",
+        "https://sentinel-ai-one-alpha.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
